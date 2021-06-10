@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("https://github.com/john-smilga/javascript-basic-projects/blob/master/06-modal/final/hero.jpeg?raw=true") center/cover no-repeat;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    height: 200px;
+    background: white;
+    border-radius: 7px;
+    box-shadow: 0px 0px 20px rgb(92, 92, 92);
+}
+
+.box * {
+    margin: 20px;
+}
+
+
+/* overlay */
+
+.overlay-div {
+    background: rgba(173, 216, 230, 0.514);
+    display: none;
+}
+
+.show-overlay-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.overlay-box * {
+    margin: 0px;
+}
+
+.overlay-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    height: 180px;
+    background: white;
+    border-radius: 7px;
+    position: absolute;
+    box-shadow: 0px 0px 20px rgb(92, 92, 92);
+}
+
+.closeBtn {
+    color: red;
+    position: relative;
+    top: -40px;
+    left: 150px;
+}
